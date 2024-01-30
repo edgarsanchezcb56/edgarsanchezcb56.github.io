@@ -1,0 +1,50 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{/* formato para todas las etiquetas h1*/
+    color:blueviolet;
+    border: 2px solid pink;
+    background-color: bisque;
+    padding: 10px/*Margenes internos del contenido de la etiqueta*/;
+    text-align: right;
+    text-shadow: 3px 3px 4px black;
+}
+
+#etiqueta2{
+    color:red;
+    border:2px solid blue;
+    background: yellow;
+   /* opacity: 0.3;*/
+    width: 50%; /*tamaño de lo ancho*/
+    height: 300px; /*tamaño de lo alto*/
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;/*negritas*/
+    font-style: italic;
+}
+
+body{
+    background-image: url("background.jpg") ;
+}
+
+.etiqueta3{
+    border-width: 5px;
+    border: 5px solid rebeccapurple;
+    border-style: groove;
+    color: blue;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin: 20px 60px 20px 60px; /*margenes pegados al borde*/
+    text-align: center;
+}
+
+ul, li, a{
+    display: inline-block;
+    color: purple;
+    border-left: 20px aqua;
+    border-radius: 10px;
+    background-color: pink;
+    text-decoration: none;/*quita  al texto*/
+    text-transform: uppercase;
+}
