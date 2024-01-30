@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <style>
+  div {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  </style>
+
+</head>
+
+<body>
+  
+  <div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+
+  <p> Pase el mouse sobre el rectangulo de arriba y obtenga las coordenadas del punturo del mouse...</p>
+  
+  <!-- Cuando se mueve el mouse sobre el div, el elemento p mostrará las coordenadas horizontales y verticales del puntero del mouse, cuyos valores se devuelven desde las propiedades clientX y clientY en el objeto MouseEvent.</p>-->
+
+  <p id="demo"></p>
+
+  <script>
+  function myFunction(e) {
+    var x = e.clientX;
+    var y = e.clientY;
+    var coor = "Coordenadas: (" + x + "," + y + ")";
+    document.getElementById("demo").innerHTML = coor;
+  }
+
+  function clearCoor() {
+    document.getElementById("demo").innerHTML = "";
+  }
+  </script>
+
+</body>
+</html>

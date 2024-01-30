@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+  <h1>Evento onclick...</h1>
+
+  <p>Se usa para activar una función que genera "Hola Mundo", cuando se hace clic en el elemento botón.</p>
+  
+  <button onclick="miFuncion()"> Haz clic en mí </button>
+
+  <p id="demo"></p>
+  <!-- Haga clic en el botón para activar una función que generará "Hola Mundo" en un elemento p con id = "demo" -->
+  <script>
+    function miFuncion() {
+    document.getElementById("demo").innerHTML = "Hola Mundo";
+    }
+  </script>
+
+</body>
+</html>
